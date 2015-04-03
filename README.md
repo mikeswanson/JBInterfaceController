@@ -7,7 +7,7 @@ JBInterfaceController is a WKInterfaceController subclass that makes it easier t
 
 I don't have time to write documentation at the moment, as I'm working on my own WatchKit app. I'd recommend looking at the example project and the headers. All that said, here are a few quick comments:
 
-* The example shows how to present interface controllers that display a replacement status bar when the "modal bug" happens (the topic of this thread).
+* The example shows how to present interface controllers that display a replacement status bar when the "modal bug" happens.
 * The example also shows how to configure delegates if you need to communicate between a presented interface controller and its presenting controller.
 * The subclasses make it easy to update interface elements by calling an updateInterface method (modeled lightly after UIView drawRect and layoutSubviews concepts).
 * My table rows (which I didn't include in this example) are JBInterface subclasses that simply invalidate themselves. They're then updated at the next opportunity.
