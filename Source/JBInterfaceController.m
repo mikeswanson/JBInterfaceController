@@ -239,10 +239,13 @@ static BOOL isInBackground = NO;
     NSOperatingSystemVersion version = [NSProcessInfo processInfo].operatingSystemVersion;
 
     // Assume this is fixed after 8.2.0 (but we'll have to change this if that isn't the case)
-    return (version.majorVersion == 8 &&
-            version.minorVersion == 2 &&
-            version.patchVersion == 0);
-}
+    // 4/12/2015 - The bug still exists in 8.3.0
+    return ((version.majorVersion == 8 &&
+             version.minorVersion == 2 &&
+             version.patchVersion == 0) ||
+            (version.majorVersion == 8 &&
+             version.minorVersion == 3 &&
+             version.patchVersion == 0));}
 
 - (JBInterface *)interface {
     
