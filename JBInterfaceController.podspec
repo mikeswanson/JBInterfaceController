@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name     = 'JBInterfaceController'
   s.version  = '1.0.0'
-  s.summary  = 'Enhanced WatchKit interface controller functionality.'
+  s.summary  = 'Adds UIViewController-like functionality to WatchKit interface controllers'
   s.homepage = 'https://github.com/mikeswanson/JBInterfaceController'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
   s.author   = 'Mike Swanson'
