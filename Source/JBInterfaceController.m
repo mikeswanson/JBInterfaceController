@@ -160,7 +160,7 @@ static BOOL isInBackground = NO;
 #pragma mark - Object management
 
 - (void)dealloc {
-
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     if (_interface) {
         
         [_interface removeObserver:self forKeyPath:@"needsUpdate"];
